@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map For SunLight
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+SunLight	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+calcDOY	KEYWORD2
+computeSR	KEYWORD2
+conv_sessagesimali	KEYWORD2
+mediumNoon	KEYWORD2
+setPosition	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
