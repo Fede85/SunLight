@@ -6,9 +6,10 @@
 
 #include "SunLight.h"
 
+
 SunLight::SunLight(){
   omega = DEGREE_TURN / DAYS_YEAR; 
-  omega = omega / DEG_RAD; 
+  omega = omega / DEG_TO_RAD; 
   lat = 45.58; 
   lon = 9.19;
 }
@@ -48,9 +49,9 @@ boolean SunLight::computeSR( uint8_t alba_tramonto[], uint8_t & twilight, uint8_
     float E2 = sin(omega * (dayOfYear - 1.0));
     float E = -9.87 * E1 + 7.67 * E2; //equazione del tempo
 
-    float mezzo_di = mezzo_di_medio + E/100.0;
+    float mezzo_di = mezzo_di_medio + E/60.0;
 
-    float T = 12 * (1 + (dec * tan(lat / DEG_RAD) / 90.0));
+    float T = 12 * (1 + (dec * tan(lat / DEG_TO_RAD) / 90.0));
 
     float twilight_hr;
     if( twilight >= 0 && twilight <= 60 )

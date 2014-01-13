@@ -11,24 +11,20 @@ extern "C" {
 #include <Math.h>
 }
 
-// include types & constants of Wiring core API
-#include <WConstants.h>
-
-//#include "WProgram.h"
 
 #define DEGREE_TURN 360.0 
 #define DAYS_YEAR 365.0 
-#define DEG_RAD 57.2958 // Conversion degree to radiant
-#define GMT_0 13.0 // Local Greenwich Mean Time, it's the basis for these calculation
-#define DEG_MERIDIUM 15.0 // Every 15° we pass one meridium and the mean time change of 1 hr
-#define INPUT_ERROR 0  // If error occurred in input data 
-#define INPUT_VALID 1 // If the function recived the correct parameter
-#define DOY_ERROR 400 // If the calcDOY function recived invalid parameters input
+#define DEG_TO_RAD 57.2958	// Conversion degree to radiant
+#define GMT_0 13.0		// Local Greenwich Mean Time, it's the basis for these calculation
+#define DEG_MERIDIUM 15.0	// Every 15° we pass one meridium and the mean time change of 1 hr
+#define INPUT_ERROR 0		// If error occurred in input data 
+#define INPUT_VALID 1		// If the function recived the correct parameter
+#define DOY_ERROR -1		// If the calcDOY function recived invalid parameters input
 
-#define SUNRISE_H 0  // Sunrise array index for hours
-#define SUNRISE_M 1  // Sunrise array index for minutes
-#define SUNSET_H 2   // Sunset array index for hours
-#define SUNSET_M 3   // Sunset array index for minutes
+#define SUNRISE_H 0		// Sunrise array index for hours
+#define SUNRISE_M 1		// Sunrise array index for minutes
+#define SUNSET_H 2		// Sunset array index for hours
+#define SUNSET_M 3		// Sunset array index for minutes
 
 class SunLight {
 public:
