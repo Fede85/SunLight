@@ -11,10 +11,11 @@ extern "C" {
 #include <Math.h>
 }
 
-// include types & constants of Wiring core API
-#include <WConstants.h>
-
-//#include "WProgram.h"
+#if defined(ARDUINO) && ARDUINO >= 100
+  #include "Arduino.h"
+#else
+  #include "WProgram.h"
+#endif
 
 #define DEGREE_TURN 360.0 
 #define DAYS_YEAR 365.0 

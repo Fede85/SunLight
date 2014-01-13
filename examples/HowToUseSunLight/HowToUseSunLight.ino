@@ -1,4 +1,3 @@
-#include <WProgram.h>
 #include <SunLight.h>
 
 SunLight mySun; // Declaration of the object
